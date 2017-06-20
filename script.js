@@ -36,16 +36,19 @@ function getUsername() {
         console.log(user);
         // et je retourne la valeur enregistrée dans le cookie pour etre utilisé par une autre fonction
         return user;
-    } else {
+    } 
+    else {
     // sinon je demande son nom et j'enregistre le cookie
         user = prompt("Veuillez rentrez votre nom:", "");
         if (user != "" && user != null) {
             setCookie("username", user, 365);
         }
-    }
 }
+
 
 getUsername();
 
 
+
+}
 })
